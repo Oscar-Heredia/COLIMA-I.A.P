@@ -38,11 +38,11 @@ img {
     height: auto;
 }
 
-button,
+/*button,
 input {
     border: none;
     outline: none;
-}
+}*/
 
 button {
     cursor: pointer;
