@@ -1,389 +1,299 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Tanatología y Psicología Colima I.A.P - Apoyo Psicológico y Tanatológico</title>
-    <meta name="description" content="Institución sin fines de lucro que ofrece apoyo tanatológico y psicológico ante pérdidas en Colima. Especialistas en duelo, terapia psicológica y capacitación profesional.">
-    <meta name="keywords" content="tanatología, psicología, duelo, pérdidas, terapia psicológica, Colima, apoyo emocional, logoterapia, terapia infantil, grupo de ayuda">
-    <meta name="author" content="Tanatología y Psicología Colima I.A.P">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#5b184f">
+    <title>Apoyo psicológico y tanatológico en Colima | Colima I.A.P.</title>
+    <meta name="description" content="Acompañamiento psicológico y tanatológico ante pérdidas significativas en Colima. Conoce nuestros servicios y solicita apoyo por WhatsApp.">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph Meta Tags para redes sociales -->
-    <meta property="og:title" content="Tanatología y Psicología Colima I.A.P - Apoyo Psicológico">
-    <meta property="og:description" content="Apoyo tanatológico y psicológico profesional ante pérdidas en Colima. Especialistas en duelo y bienestar emocional.">
+    <meta property="og:title" content="Tanatología y Psicología Colima I.A.P.">
+    <meta property="og:description" content="Acompañamiento profesional para personas y familias que atraviesan una pérdida significativa.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://colimaiap.com">
-    <meta property="og:image" content="img/logo-Photoroom.png">
     <meta property="og:locale" content="es_MX">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tanatología y Psicología Colima I.A.P">
-    <meta name="twitter:description" content="Apoyo tanatológico y psicológico profesional ante pérdidas en Colima.">
-    <meta name="twitter:image" content="img/logo-Photoroom.png">
-    
-    <!-- Meta tags adicionales -->
-    <meta name="geo.region" content="MX-COL">
-    <meta name="geo.placename" content="Colima, México">
-    <meta name="geo.position" content="19.238661;-103.7405878">
-    <meta name="ICBM" content="19.238661, -103.7405878">
-    
-    <link rel="canonical" href="https://colimaiap.com">
-    <link rel="shortcut icon" href="img/psicologia.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="icon" href="img/web/simbolo-psicologia.webp" type="image/webp">
+    <link rel="preload" href="fonts/commissioner-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/web/equipo-institucion.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    
-    <header class="header" id="header" style="color: #FFD700;">
-        
-        <nav class="nav container">
-            <a href="#home" class="navLink">
-                <img src="img/psicologia.png" alt="Logo Tanatología y Psicología Colima I.A.P" class="navL-img">
-                COLIMA I.A.P
+    <!--
+      THESIS: Un archivo vivo de acompañamiento; rechaza la landing clínica genérica y deja que personas, servicio e historia real construyan confianza.
+      OWN-WORLD: Morado institucional en grandes campos, dorado como regla precisa, fotografía documental y tipografía humanista de bordes contenidos.
+      STORY: La persona reconoce apoyo local, entiende las tres vías de atención, conoce a la institución y solicita ayuda por WhatsApp.
+      FIRST VIEWPORT: El mensaje se abre por líneas a la izquierda mientras una fotografía real, enmarcada por el símbolo institucional, se descubre a la derecha.
+      FORM: Archivo institucional vivo, quinta dirección de la lista; seed 27311903.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="Tanatología y Psicología Colima I.A.P., inicio">
+                <img src="img/web/simbolo-psicologia.webp" width="128" height="128" alt="">
+                <span class="brand-copy">
+                    <strong>Colima I.A.P.</strong>
+                    <span>Tanatología y Psicología</span>
+                </span>
             </a>
 
-            <div class="navM" id="nav-menu">
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-button hidden>
+                <span class="menu-button-label">Menú</span>
+                <span class="menu-button-icon" aria-hidden="true"></span>
+            </button>
 
-                <ul class="navList">
-                    <li class="navItem">
-                        <a href="#home" class="navLink active-link">Inicio</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#about" class="navLink">Nosotros</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#discount" class="navLink">Psicólogos</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#new" class="navLink">Servicios</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#contact" class="navLink">Contacto</a>
-                    </li>
-                </ul>
-
-                <div class="navClose" id="nav-close">
-                    <i class="bx bx-x"></i>
-                </div>
-
-            </div>
-
-            <div class="navToggle" id="nav-toggle">
-                <i class="bx bx-grid-alt"></i>
-            </div>
-
-        </nav>
-
+            <nav class="site-nav" id="menu-principal" aria-label="Navegación principal" data-menu>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#jornadas">Jornadas 2023</a>
+                <a href="#contacto">Contacto</a>
+                <a class="button button-small nav-support" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20solicitar%20apoyo%20psicol%C3%B3gico%20o%20tanatol%C3%B3gico." target="_blank" rel="noopener noreferrer">Solicitar apoyo</a>
+            </nav>
+        </div>
+        <span class="scroll-progress" aria-hidden="true"></span>
     </header>
 
-    <main class="main">
+    <main id="contenido">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h1 id="hero-title">
+                        <span class="hero-title-line"><span>Acompañamos</span></span>
+                        <span class="hero-title-line"><span>tu proceso</span></span>
+                        <span class="hero-title-line"><span>de duelo.</span></span>
+                    </h1>
+                    <p class="hero-lead">Apoyamos a personas y familias ante una pérdida significativa, promoviendo bienestar emocional y comunitario.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20solicitar%20apoyo%20psicol%C3%B3gico%20o%20tanatol%C3%B3gico." target="_blank" rel="noopener noreferrer">Solicitar apoyo</a>
+                        <a class="text-link" href="#servicios">Conocer los servicios</a>
+                    </div>
+                    <p class="support-note">Atención psicológica y acompañamiento tanatológico de manera personalizada, en pareja y en familia.</p>
+                </div>
 
-        <!--Home-->
-        <section class="home container" id="home">
-            <div class="swiper home-swiper">
-                <div class="swiper-wrapper">
+                <figure class="hero-portrait">
+                    <div class="hero-image-frame">
+                        <img src="img/web/equipo-institucion.webp" width="940" height="1188" alt="Integrantes y participantes reunidos en las instalaciones de la institución">
+                    </div>
+                    <figcaption>Una institución no lucrativa al servicio de la comunidad de Colima.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-                    <section>
-                        <div class="homecont grid">
+        <section class="service-index" id="servicios" aria-labelledby="services-title">
+            <div class="section-shell">
+                <div class="section-intro services-intro" data-reveal="rise">
+                    <h2 id="services-title">Tres formas de acompañar.</h2>
+                    <p>Atención, comunidad y formación para transitar pérdidas significativas con apoyo profesional.</p>
+                </div>
 
-                            <div class="homedata" style="margin-top: 10%;">
-                                <h1 class="homet">BIENVENIDOS</h1>
-                                <p class="homedes">
-                                    "Apoyamos a personas y familias en la sanación del duelo, promoviendo bienestar emocional y comunitario."
-                                </p>
-                                <div class="homebut">
-                                    <a href="#new" class="button">Servicios</a>
-                                    <a href="#discount" class="button">Psicólogos</a>
-                                </div>
-                            </div>
-                            <div class="homeg">
-                                <img src="img/logo-Photoroom.png" class="homeimg" alt="Logo de Tanatología y Psicología Colima I.A.P">
-                            </div>
-
+                <div class="services-grid">
+                    <article class="service service-featured" data-reveal="service">
+                        <div class="service-image">
+                            <img src="img/web/servicio-tanatologia.webp" width="460" height="250" alt="Manos abiertas bajo una mariposa, símbolo de transformación" loading="lazy" decoding="async">
                         </div>
-                    </section>
+                        <div class="service-copy">
+                            <h3>Intervención tanatológica y psicológica</h3>
+                            <p>Acompañamiento personalizado para personas, parejas y familias ante una pérdida significativa.</p>
+                            <a class="text-link" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20la%20intervenci%C3%B3n%20tanatol%C3%B3gica%20y%20psicol%C3%B3gica." target="_blank" rel="noopener noreferrer" aria-label="Solicitar información sobre intervención tanatológica y psicológica">Solicitar información</a>
+                        </div>
+                    </article>
 
+                    <article class="service service-compact service-purple" data-reveal="service">
+                        <div class="service-image">
+                            <img src="img/web/servicio-grupo-ayuda.webp" width="800" height="534" alt="Personas reunidas en un grupo de acompañamiento" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-copy">
+                            <h3>Grupo de ayuda mutua</h3>
+                            <p>Un espacio comunitario para compartir y acompañarse durante el proceso de duelo.</p>
+                            <a class="text-link text-link-light" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20grupo%20de%20ayuda%20mutua." target="_blank" rel="noopener noreferrer" aria-label="Solicitar información sobre el grupo de ayuda mutua">Solicitar información</a>
+                        </div>
+                    </article>
+
+                    <article class="service service-compact service-gold" data-reveal="service">
+                        <div class="service-image">
+                            <img src="img/web/servicio-talleres.webp" width="247" height="204" alt="Sesión de formación impartida ante un grupo" loading="lazy" decoding="async">
+                        </div>
+                        <div class="service-copy">
+                            <h3>Talleres y cursos</h3>
+                            <p>Actividades de capacitación y desarrollo alrededor del morir, la muerte y el duelo.</p>
+                            <a class="text-link" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20los%20talleres%20y%20cursos." target="_blank" rel="noopener noreferrer" aria-label="Solicitar información sobre talleres y cursos">Solicitar información</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-         <!--About-->
-         <section class="section about" id="about">
-            <div class="abcontainer container grid">
-                <img src="img/mision-vision.jpg" class="aboutimg" alt="" style="border-radius: 20px;">
-                <div class="abdata">
-                    <h2 class="stitle abti">MISIÓN</h2>
-                    <p class="abdes" style="text-align: justify;">Somos una Institución no lucrativa enfocada en brindar atención tanatologíca y psicológica a toda persona que tenga una pérdida significativa en su vida.  <br> Comprometidos profesionalmente en la capacitación, desarrollo e investigación sobre el morir, la muerte, el duelo y lo que hay después de la muerto.
-                    </p>
-                    <h2 class="stitle abti">VISIÓN</h2>
-                    <p class="abdes"  style="text-align: justify;">Ser la Institución de tanatología y psicología de mayor relevancia y liderazgo en la región, enfocada siempre en el continuo desarrollo y excelencia de su personal, comprometidos en proporcionar un servicio de total satisfacción en la comunidad doliente.</p>
-                </div>
-            </div>
-         </section>
-
-        <!--Category-->
-        <section class="section category">
-
-            <h2 class="stitle" style="color: black;">Jornada<br> Tanatológica </h2>
-
-            <div class="catcontainer container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px;">
-
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 192313.png" class="catimg" alt="Imagen 1 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+        <section class="about" id="nosotros" aria-labelledby="about-title">
+            <div class="section-shell about-grid">
+                <div class="about-heading" data-reveal="side">
+                    <img src="img/web/logo-colima.webp" width="300" height="300" alt="Logotipo de Tanatología y Psicología Colima I.A.P." loading="lazy" decoding="async">
+                    <h2 id="about-title">Una institución dedicada a acompañar.</h2>
                 </div>
 
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 192845.png" class="catimg" alt="Imagen 2 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">  
-                </div>
-
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 193236.png" class="catimg" alt="Imagen 3 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
-                </div>
-
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 221949.png" class="catimg" alt="Imagen 4 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
-                </div>
-
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 222232.png" class="catimg" alt="Imagen 5 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
-                </div>
-
-                <div class="catdata">
-                    <img src="img/Captura de pantalla 2024-12-09 222511.png" class="catimg" alt="Imagen 6 de Jornada Tanatológica" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                <div class="principles">
+                    <article data-reveal="principle">
+                        <h3>Misión</h3>
+                        <p>Somos una institución no lucrativa enfocada en brindar atención tanatológica y psicológica a toda persona que tenga una pérdida significativa en su vida. Estamos comprometidos profesionalmente con la capacitación, el desarrollo y la investigación sobre el morir, la muerte, el duelo y lo que hay después de la muerte.</p>
+                    </article>
+                    <article data-reveal="principle">
+                        <h3>Visión</h3>
+                        <p>Ser la institución de tanatología y psicología de mayor relevancia y liderazgo en la región, enfocada siempre en el desarrollo continuo y la excelencia de su personal, comprometido con proporcionar un servicio de total satisfacción a la comunidad doliente.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        
-
-     <!--Psicólogos-->
-          <section class="section discount" id="discount">
-            
-             <h2 class="stitle">Nuestro Equipo de Psicólogos</h2>
-
-            <div class="dscont container grid"> 
-                <img src="img/MARÍA ROSA  GUZMÁN ÁLVAREZ.png" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black;">María Rosa Guzmán Álvarez </h2>
-                    <p style="color: black; ">Lic. en Enfermeria<br>Coordinadora académica del diplomado <br>Tanatología Clínica Integral</p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20María%20Rosa%20Guzmán%20Álvarez" class="button" target="_blank" rel="noopener" aria-label="Contactar a María Rosa Guzmán Álvarez por WhatsApp">Contactar</a>
+        <section class="team" id="equipo" aria-labelledby="team-title">
+            <div class="section-shell">
+                <div class="section-intro team-intro" data-reveal="rise">
+                    <h2 id="team-title">Nuestro equipo.</h2>
+                    <p>Personas con experiencia en atención, formación y acompañamiento humano.</p>
                 </div>
-            </div>
 
-            <div class="dscont container grid"> 
-                <img src="img/Irene Ceballos aréchiga .jpg" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black;">Irene Ceballos Aréchiga </h2>
-                    <p style="color: black; ">Presidenta de la institución <br>Tanatología y Psicología Colima I.A.P</Col></p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20Irene%20Ceballos%20Aréchiga" class="button" target="_blank" rel="noopener" aria-label="Contactar a Irene Ceballos Aréchiga por WhatsApp">Contactar</a>
-                </div>
-            </div>
-
-            <div class="dscont container grid"> 
-                <img src="img/Martha González Reyna.jpg" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black">Martha González Reyna</h2>
-                    <p style="color: black; ">Especialista en Logoterapia y sentido de vida</p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20Martha%20González%20Reyna" class="button" target="_blank" rel="noopener" aria-label="Contactar a Martha González Reyna por WhatsApp">Contactar</a>
-                </div>
-            </div>
-
-            <div class="dscont container grid"> 
-                <img src="img/Nohemí  Mendoza Aparicio.png" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black">Nohemí Mendoza Aparicio</h2>
-                    <p style="color: black; ">Mtría. en Evaluación y Terapia Infantil</p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20Nohemí%20Mendoza%20Aparicio" class="button" target="_blank" rel="noopener" aria-label="Contactar a Nohemí Mendoza Aparicio por WhatsApp">Contactar</a>
-                </div>
-            </div>
-
-            <div class="dscont container grid"> 
-                <img src="img/ELBA GABRIELA VÁZQUEZ GARIBAY.png" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black">Elba Gabriela Vázquez Garibay</h2>
-                    <p style="color: black; ">Licenciatura en Psicología</p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20Elba%20Gabriela%20Vázquez%20Garibay" class="button" target="_blank" rel="noopener" aria-label="Contactar a Elba Gabriela Vázquez Garibay por WhatsApp">Contactar</a>
-                </div>
-            </div>
-
-            <div class="dscont container grid"> 
-                <img src="img/José Francisco González Peña.jpg" class="disimg" alt="">
-                <div class="disdata">
-                    <h2 class="distitle" style="color: black">José Francisco González Peña</h2>
-                    <p style="color: black; ">Enfermero con amplia experiencia clínica y docente</p>
-                    <a style="margin-top: 1rem;" href="https://wa.me/523121770831?text=Hola,%20podría%20agendar%20una%20cita%20con%20José%20Francisco%20González%20Peña" class="button" target="_blank" rel="noopener" aria-label="Contactar a José Francisco González Peña por WhatsApp">Contactar</a>
-                </div>
-            </div>
-
-          </section>
-
-    <!--New-->
-    <section class="section new" id="new">
-        <h2 class="stitle">Nuestros servicios</h2>
-
-        <div class="newcont container">
-            <div class="swiper new-swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="newcontent swiper-slide">
-                        <img src="img/tanatologia.jpg" style="height: 200px; width: 200px">
-                        <h3 class="newti">Intervención Tanatológica y Psicológica</h3>
-                        <div class="newps">
+                <div class="team-list">
+                    <article class="person person-wide" data-reveal="person">
+                        <img src="img/web/equipo-maria-rosa.webp" width="214" height="216" alt="Retrato de María Rosa Guzmán Álvarez" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>María Rosa Guzmán Álvarez</h3>
+                            <p>Lic. en Enfermería<br>Coordinadora académica del diplomado Tanatología Clínica Integral</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Mar%C3%ADa%20Rosa%20Guzm%C3%A1n%20%C3%81lvarez." target="_blank" rel="noopener noreferrer" aria-label="Contactar a María Rosa Guzmán Álvarez">Contactar</a>
                         </div>
-                        <button class="button newbu">
-                            <i class="bx bx-cart-alt newicon"></i>
-                        </button>
-                    </div>
-                    <div class="newcontent swiper-slide">
-                        <img src="img/grupo de ayuda.jpg" style="height: 200px; width: 200px">
-                        <h3 class="newti">Grupo de ayuda mutua</h3>
-                        <div class="newps">
-                        </div>
-                        <button class="button newbu">
-                            <i class="bx bx-cart-alt newicon"></i>
-                        </button>
-                    </div>
-                    <div class="newcontent swiper-slide">
-                        <img src="img/taller y cursos.jpg" style="height: 200px; width: 200px">
-                        <h3 class="newti">Talleres y cursos</h3>
-                        <div class="newps">
-                        </div>
-                        <button class="button newbu">
-                            <i class="bx bx-cart-alt newicon"></i>
-                        </button>
-                    </div>
+                    </article>
 
+                    <article class="person" data-reveal="person">
+                        <img src="img/web/equipo-irene.webp" width="560" height="740" alt="Retrato de Irene Ceballos Aréchiga" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>Irene Ceballos Aréchiga</h3>
+                            <p>Presidenta de Tanatología y Psicología Colima I.A.P.</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Irene%20Ceballos%20Ar%C3%A9chiga." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Irene Ceballos Aréchiga">Contactar</a>
+                        </div>
+                    </article>
+
+                    <article class="person" data-reveal="person">
+                        <img src="img/web/equipo-martha.webp" width="560" height="708" alt="Retrato de Martha González Reyna" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>Martha González Reyna</h3>
+                            <p>Especialista en Logoterapia y sentido de vida</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Martha%20Gonz%C3%A1lez%20Reyna." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Martha González Reyna">Contactar</a>
+                        </div>
+                    </article>
+
+                    <article class="person" data-reveal="person">
+                        <img src="img/web/equipo-nohemi.webp" width="253" height="276" alt="Retrato de Nohemí Mendoza Aparicio" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>Nohemí Mendoza Aparicio</h3>
+                            <p>Mtría. en Evaluación y Terapia Infantil</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Nohem%C3%AD%20Mendoza%20Aparicio." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Nohemí Mendoza Aparicio">Contactar</a>
+                        </div>
+                    </article>
+
+                    <article class="person" data-reveal="person">
+                        <img src="img/web/equipo-elba.webp" width="148" height="174" alt="Retrato de Elba Gabriela Vázquez Garibay" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>Elba Gabriela Vázquez Garibay</h3>
+                            <p>Licenciatura en Psicología</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Elba%20Gabriela%20V%C3%A1zquez%20Garibay." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Elba Gabriela Vázquez Garibay">Contactar</a>
+                        </div>
+                    </article>
+
+                    <article class="person" data-reveal="person">
+                        <img src="img/web/equipo-jose-francisco.webp" width="560" height="750" alt="Retrato de José Francisco González Peña" loading="lazy" decoding="async">
+                        <div class="person-copy">
+                            <h3>José Francisco González Peña</h3>
+                            <p>Enfermero con amplia experiencia clínica y docente</p>
+                            <a href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20agendar%20una%20cita%20con%20Jos%C3%A9%20Francisco%20Gonz%C3%A1lez%20Pe%C3%B1a." target="_blank" rel="noopener noreferrer" aria-label="Contactar a José Francisco González Peña">Contactar</a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <section class="archive" id="jornadas" aria-labelledby="archive-title">
+            <div class="section-shell">
+                <div class="archive-heading">
+                    <div data-reveal="rise">
+                        <h2 id="archive-title">Jornadas Tanatológicas 2023.</h2>
+                        <p>“Renaciendo a través del dolor”, un encuentro de formación y comunidad realizado el 5 de agosto de 2023.</p>
+                    </div>
+                    <span aria-hidden="true" data-reveal="year">2023</span>
+                </div>
 
+                <div class="archive-grid">
+                    <figure class="archive-photo archive-photo-lead" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-01.webp" width="1200" height="674" alt="Equipo organizador de las Jornadas Tanatológicas 2023" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="archive-photo" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-02.webp" width="1200" height="670" alt="Apertura de las Jornadas Tanatológicas 2023 en el auditorio" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="archive-photo" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-03.webp" width="1200" height="678" alt="Ponencia sobre conciencia y dolor durante las jornadas" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="archive-photo archive-photo-tall" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-04.webp" width="1200" height="676" alt="Público asistente a las Jornadas Tanatológicas 2023" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="archive-photo" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-05.webp" width="534" height="440" alt="Panel de participantes durante las jornadas" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="archive-photo" data-reveal="photo">
+                        <img src="img/web/jornadas-2023-06.webp" width="528" height="524" alt="Mesa de registro y entrega de materiales de las jornadas" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-    <!--Ubicación y Contacto-->
-    <section class="section newslet" id="contact">
-        <div class="newslc container">
-            <h2 class="stitle">Ubicación y Contacto</h2>
+        <section class="contact" id="contacto" aria-labelledby="contact-title">
+            <div class="section-shell contact-grid">
+                <div class="contact-copy" data-reveal="side">
+                    <h2 id="contact-title">No tienes que transitarlo en soledad.</h2>
+                    <p>Escríbenos para conocer las opciones de acompañamiento disponibles.</p>
+                    <a class="button button-gold" href="https://wa.me/523121770831?text=Hola%2C%20quisiera%20solicitar%20apoyo%20psicol%C3%B3gico%20o%20tanatol%C3%B3gico." target="_blank" rel="noopener noreferrer">Solicitar apoyo</a>
 
-            <p class="newsld">📍 Árbol Benjamín 513, J. Pimentel Llerenas, 28077 Colima, Col.</p>
+                    <address>
+                        <strong>Tanatología y Psicología Colima I.A.P.</strong>
+                        <span>Árbol Benjamín 513</span>
+                        <span>J. Pimentel Llerenas, 28077 Colima, Col.</span>
+                        <a href="tel:+523121770831">+52&nbsp;312&nbsp;177&nbsp;0831</a>
+                    </address>
+                </div>
 
-            <div class="map-container">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.003916135086!2d-103.7405878!3d19.238661099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842545582ab59743%3A0xe2367b0e528216e5!2s%C3%81rbol%20Benjam%C3%ADn%20513-j%2C%20La%20Albarrada%2C%2028077%20Colima%2C%20Col.!5e0!3m2!1ses-419!2smx!4v1745876791681!5m2!1ses-419!2smx"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
-
-              
-           <!-- <form action="" class="newslf">
-                <input type="text" placeholder="Enter your mail" class="newslin">
-                <button class="button2">Subscribete</button>
-            </form>-->
-        </div>
-     
-    </section>
-
+                <div class="map-frame" data-reveal="map">
+                    <iframe
+                        title="Ubicación de Tanatología y Psicología Colima I.A.P. en Google Maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.003916135086!2d-103.7405878!3d19.238661099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842545582ab59743%3A0xe2367b0e528216e5!2s%C3%81rbol%20Benjam%C3%ADn%20513-j%2C%20La%20Albarrada%2C%2028077%20Colima%2C%20Col.!5e0!3m2!1ses-419!2smx!4v1745876791681!5m2!1ses-419!2smx"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
     </main>
 
-     <!--Footer-->
-     <footer class="footer section">
-
-        <div class="ftcontainer container grid">
-
-            <div class="ftcontent">
-
-                <a href="#" class="footerL">
-                    <img src="img/psicologia.png" class="footerL-img" alt="">
-                    <p>COLIMA I.A.P</p>
-                </a>
-
-                <p class="footerdescription">Brindamos atención psicológica y acompañamiento tanatológico de manera personalizada, en pareja y en familia.</p>
-
-                <div class="footersocial">
-
-                    <a href="https://www.facebook.com/groups/416745685193293/?locale=es_LA" target="_black" class="footersocial-link">
-                        <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#" target="_black" class="footersocial-link">
-                        <i class="bx bxl-instagram-alt"></i>
-                    </a>
-
-                    <a href="#" target="_black" class="footersocial-link">
-                        <i class="bx bxl-twitter"></i>
-                    </a>
-                </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="img/web/logo-colima.webp" width="300" height="300" alt="" loading="lazy" decoding="async">
+                <p>Atención psicológica y acompañamiento tanatológico en Colima.</p>
             </div>
 
-            <div class="ftcontent">
+            <nav class="footer-nav" aria-label="Navegación del pie de página">
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
 
-                <h3 class="ftti">Nosotros</h3>
-                <ul class="ftli">
-                    <li>
-                        <a href="#" class="ftrli">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Nuevo</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Mail</a>
-                    </li>
-                </ul>
+            <div class="footer-social">
+                <p>Síguenos</p>
+                <a href="https://www.facebook.com/groups/416745685193293/?locale=es_LA" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
-
-            <div class="ftcontent">
-
-                <h3 class="ftti">Servicio</h3>
-                <ul class="ftli">
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="ftcontent">
-
-                <h3 class="ftti">Lorem</h3>
-                <ul class="ftli">
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ftrli">Lorem</a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
-
-        <span class="footercopy">&#169;COLIMA I.A.P</span>
-
-     </footer>
-
-
-     <a href="#" class="scrollup" id="scroll-up">
-         <i class="bx bx-up-arrow-alt scrollupicon"></i>
-     </a>
-
-
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+        <div class="footer-bottom">
+            <p>&copy; <span data-year>2026</span> Tanatología y Psicología Colima I.A.P.</p>
+            <a href="#inicio">Volver arriba</a>
+        </div>
+    </footer>
 </body>
 </html>

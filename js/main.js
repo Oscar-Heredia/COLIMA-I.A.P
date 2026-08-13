@@ -1,101 +1,176 @@
-/*show menu */
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
- 
-      if(navToggle) {
-          navToggle.addEventListener('click', () => {
-              navMenu.classList.add('show-menu')
-          })
-      }
+document.documentElement.classList.add('js');
+if (!reduceMotion.matches) document.documentElement.classList.add('motion-ok');
 
-      if(navClose) {
-          navClose.addEventListener('click', () => {
-              navMenu.classList.remove('show-menu')
-          })
-      }
+const menuButton = document.querySelector('[data-menu-button]');
+const menu = document.querySelector('[data-menu]');
+const header = document.querySelector('[data-header]');
+const menuLinks = menu ? [...menu.querySelectorAll('a[href^="#"]')] : [];
 
+if (menuButton) menuButton.hidden = false;
 
-    const navLink = document.querySelectorAll('.navLink')
+function setMenu(open) {
+    if (!menuButton || !menu) return;
 
-    function linkAction() {
-        const navMenu = document.getElementById('.navLink')
-        navMenu.classList.remove('show-menu')
-    }
-
-    navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-    /* header change color */
-
-    function scrollHeader() {
-        const header = document.getElementById('header')
-        if(this.scrollY >= 50) header.classList.add('scroll-header');
-        else header.classList.remove('scroll-header')
-    }
-
-    window.addEventListener('scroll', scrollHeader)
-
-
-    /* slider*/
-    let newSwiper = new Swiper(".new-swiper", {
-        centerdSlides: true,
-        slidesPerView: "auto",
-        loop: 'true',
-        spaceBetween: 16,
-    })    
-
-    /*actvie menu */
-
-    const sections = document.querySelectorAll('section[id]')
-
-    function scrollActive() {
-        const scrollY = window.pageYOffset
-
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop -58,
-            sectionId = current.getAttribute('id')
-
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelector('.navM a[href*='+ sectionId +']').classList.add('active-link')
-
-            }else {
-                document.querySelector('.navM a[href*='+ sectionId +']').classList.remove('active-link')
-            }
-        })
-
-      
-    }
-
-    window.addEventListener('scroll', scrollActive)
-
-
-
-        /*scroll up */
-
-function scrollUp () {
-    const scrollUp = document.getElementById('scroll-up')
-
-    if(this.scrollY >= 460) scrollUp.classList.add('show-scroll'); 
-    else scrollUp.classList.remove('show-scroll')
-
+    menuButton.setAttribute('aria-expanded', String(open));
+    menu.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
 }
 
-window.addEventListener('scroll', scrollUp)
+menuButton?.addEventListener('click', () => {
+    const willOpen = menuButton.getAttribute('aria-expanded') !== 'true';
+    setMenu(willOpen);
+});
 
-/* animation section */
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
+menuLinks.forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+});
 
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        if (event.detail === 0 || reduceMotion.matches) return;
 
-})
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
 
-sr.reveal(`.home-swiper, .new-swiper, .newslc`)
-sr.reveal(`catdata, .footercontent`, {interval: 100})
-sr.reveal(`.abdata, .disimg`, {origin:'left'})
-sr.reveal(`.aboutimg, .disdata`, {origin:'left'})
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (window.location.hash !== link.hash) history.pushState(null, '', link.hash);
+    });
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuButton?.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        menuButton.focus();
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 52rem)').matches) setMenu(false);
+});
+
+const sectionLinks = menu ? [...menu.querySelectorAll('a[href^="#"]:not(.button)')] : [];
+const sections = sectionLinks
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+if ('IntersectionObserver' in window && sections.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (!visible) return;
+
+        sectionLinks.forEach((link) => {
+            const isCurrent = link.getAttribute('href') === `#${visible.target.id}`;
+            if (isCurrent) link.setAttribute('aria-current', 'true');
+            else link.removeAttribute('aria-current');
+        });
+    }, {
+        rootMargin: '-25% 0px -60% 0px',
+        threshold: [0, 0.2, 0.5],
+    });
+
+    sections.forEach((section) => sectionObserver.observe(section));
+}
+
+if ('IntersectionObserver' in window) {
+    const headerSentinel = document.querySelector('#inicio');
+    if (header && headerSentinel) {
+        const headerObserver = new IntersectionObserver(([entry]) => {
+            header.classList.toggle('is-scrolled', !entry.isIntersecting);
+        }, { threshold: 0.02 });
+
+        headerObserver.observe(headerSentinel);
+    }
+}
+
+const revealItems = [...document.querySelectorAll('[data-reveal]')];
+
+function waitForImage(image) {
+    if (!image) return Promise.resolve();
+
+    const decode = () => {
+        if (!image.decode || !image.naturalWidth) return Promise.resolve();
+
+        return Promise.race([
+            image.decode().catch(() => undefined),
+            new Promise((resolve) => window.setTimeout(resolve, 500)),
+        ]);
+    };
+    if (image.complete) return decode();
+
+    image.loading = 'eager';
+
+    return new Promise((resolve) => {
+        let timeout;
+        const finish = (event) => {
+            window.clearTimeout(timeout);
+            image.removeEventListener('load', finish);
+            image.removeEventListener('error', finish);
+            resolve(event?.type === 'load');
+        };
+
+        image.addEventListener('load', finish, { once: true });
+        image.addEventListener('error', finish, { once: true });
+        timeout = window.setTimeout(() => finish(), 1800);
+    }).then((loaded) => loaded ? decode() : undefined);
+}
+
+function settleReveal(item) {
+    const transitionTarget = item.matches('[data-reveal="photo"]')
+        ? item.querySelector('img')
+        : item;
+    let settled = false;
+
+    const finish = () => {
+        if (settled) return;
+        settled = true;
+        item.classList.add('is-settled');
+    };
+
+    transitionTarget?.addEventListener('transitionend', finish, { once: true });
+    window.setTimeout(finish, 1600);
+}
+
+async function revealItem(item) {
+    if (item.matches('[data-reveal="photo"]')) {
+        await waitForImage(item.querySelector('img'));
+    }
+
+    requestAnimationFrame(() => {
+        item.classList.add('is-revealed');
+        settleReveal(item);
+    });
+}
+
+if ('IntersectionObserver' in window && !reduceMotion.matches && revealItems.length) {
+    document.documentElement.classList.add('motion-observer');
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            observer.unobserve(entry.target);
+            revealItem(entry.target);
+        });
+    }, {
+        rootMargin: '0px 0px -8% 0px',
+        threshold: 0.12,
+    });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+}
+
+reduceMotion.addEventListener?.('change', (event) => {
+    if (!event.matches) return;
+
+    document.documentElement.classList.remove('motion-ok', 'motion-observer');
+    revealItems.forEach((item) => item.classList.add('is-revealed'));
+});
+
+const year = document.querySelector('[data-year]');
+if (year) year.textContent = String(new Date().getFullYear());

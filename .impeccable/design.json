@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T00:59:50Z",
+  "title": "Design System: Tanatología y Psicología Colima I.A.P.",
+  "extensions": {
+    "colorMeta": {
+      "purple-950": {
+        "role": "primary",
+        "displayName": "Ciruela archivo",
+        "description": "Fondo institucional más profundo para bloques de identidad y pie de página.",
+        "tonalRamp": ["oklch(15% 0.070 333.6)", "oklch(26.5% 0.070 333.6)", "oklch(38% 0.070 333.6)", "oklch(49.5% 0.070 333.6)", "oklch(61% 0.070 333.6)", "oklch(72.5% 0.070 333.6)", "oklch(84% 0.070 333.6)", "oklch(95% 0.070 333.6)"]
+      },
+      "purple-900": {
+        "role": "primary",
+        "displayName": "Ciruela institucional",
+        "description": "Navegación, contenedores oscuros y estados de cabecera.",
+        "tonalRamp": ["oklch(15% 0.096 335.4)", "oklch(26.5% 0.096 335.4)", "oklch(38% 0.096 335.4)", "oklch(49.5% 0.096 335.4)", "oklch(61% 0.096 335.4)", "oklch(72.5% 0.096 335.4)", "oklch(84% 0.096 335.4)", "oklch(95% 0.096 335.4)"]
+      },
+      "purple-800": {
+        "role": "primary",
+        "displayName": "Morado institucional",
+        "description": "Campos principales de marca y enfoque visible sobre superficies claras.",
+        "tonalRamp": ["oklch(15% 0.119 335.9)", "oklch(26.5% 0.119 335.9)", "oklch(38% 0.119 335.9)", "oklch(49.5% 0.119 335.9)", "oklch(61% 0.119 335.9)", "oklch(72.5% 0.119 335.9)", "oklch(84% 0.119 335.9)", "oklch(95% 0.119 335.9)"]
+      },
+      "purple-700": {
+        "role": "primary",
+        "displayName": "Violeta activo",
+        "description": "Acentos tipográficos de gran escala.",
+        "tonalRamp": ["oklch(15% 0.135 336.9)", "oklch(26.5% 0.135 336.9)", "oklch(38% 0.135 336.9)", "oklch(49.5% 0.135 336.9)", "oklch(61% 0.135 336.9)", "oklch(72.5% 0.135 336.9)", "oklch(84% 0.135 336.9)", "oklch(95% 0.135 336.9)"]
+      },
+      "purple-100": {
+        "role": "primary",
+        "displayName": "Lavanda velada",
+        "description": "Respaldo suave detrás de retratos e imágenes.",
+        "tonalRamp": ["oklch(15% 0.018 334.2)", "oklch(26.5% 0.018 334.2)", "oklch(38% 0.018 334.2)", "oklch(49.5% 0.018 334.2)", "oklch(61% 0.018 334.2)", "oklch(72.5% 0.018 334.2)", "oklch(84% 0.018 334.2)", "oklch(95% 0.018 334.2)"]
+      },
+      "gold-500": {
+        "role": "secondary",
+        "displayName": "Oro señal",
+        "description": "Acciones principales y reglas de énfasis.",
+        "tonalRamp": ["oklch(15% 0.150 87.5)", "oklch(26.5% 0.150 87.5)", "oklch(38% 0.150 87.5)", "oklch(49.5% 0.150 87.5)", "oklch(61% 0.150 87.5)", "oklch(72.5% 0.150 87.5)", "oklch(84% 0.150 87.5)", "oklch(95% 0.150 87.5)"]
+      },
+      "gold-300": {
+        "role": "secondary",
+        "displayName": "Oro suave",
+        "description": "Hover, enlaces y texto de apoyo sobre morado.",
+        "tonalRamp": ["oklch(15% 0.114 91.9)", "oklch(26.5% 0.114 91.9)", "oklch(38% 0.114 91.9)", "oklch(49.5% 0.114 91.9)", "oklch(61% 0.114 91.9)", "oklch(72.5% 0.114 91.9)", "oklch(84% 0.114 91.9)", "oklch(95% 0.114 91.9)"]
+      },
+      "gold-100": {
+        "role": "secondary",
+        "displayName": "Oro papel",
+        "description": "Contención tonal clara para un servicio destacado por categoría.",
+        "tonalRamp": ["oklch(15% 0.051 93.7)", "oklch(26.5% 0.051 93.7)", "oklch(38% 0.051 93.7)", "oklch(49.5% 0.051 93.7)", "oklch(61% 0.051 93.7)", "oklch(72.5% 0.051 93.7)", "oklch(84% 0.051 93.7)", "oklch(95% 0.051 93.7)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta ciruela",
+        "description": "Texto principal sobre papel.",
+        "tonalRamp": ["oklch(15% 0.013 331.6)", "oklch(26.5% 0.013 331.6)", "oklch(38% 0.013 331.6)", "oklch(49.5% 0.013 331.6)", "oklch(61% 0.013 331.6)", "oklch(72.5% 0.013 331.6)", "oklch(84% 0.013 331.6)", "oklch(95% 0.013 331.6)"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Texto ceniza",
+        "description": "Descripciones y metadatos secundarios.",
+        "tonalRamp": ["oklch(15% 0.016 333.3)", "oklch(26.5% 0.016 333.3)", "oklch(38% 0.016 333.3)", "oklch(49.5% 0.016 333.3)", "oklch(61% 0.016 333.3)", "oklch(72.5% 0.016 333.3)", "oklch(84% 0.016 333.3)", "oklch(95% 0.016 333.3)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel marfil",
+        "description": "Superficie base.",
+        "tonalRamp": ["oklch(15% 0.003 84.6)", "oklch(26.5% 0.003 84.6)", "oklch(38% 0.003 84.6)", "oklch(49.5% 0.003 84.6)", "oklch(61% 0.003 84.6)", "oklch(72.5% 0.003 84.6)", "oklch(84% 0.003 84.6)", "oklch(95% 0.003 84.6)"]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Papel mineral",
+        "description": "Superficie alterna y fondo del roster.",
+        "tonalRamp": ["oklch(15% 0.007 80.7)", "oklch(26.5% 0.007 80.7)", "oklch(38% 0.007 80.7)", "oklch(49.5% 0.007 80.7)", "oklch(61% 0.007 80.7)", "oklch(72.5% 0.007 80.7)", "oklch(84% 0.007 80.7)", "oklch(95% 0.007 80.7)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanco",
+        "description": "Texto de máximo contraste y hover puntual.",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.5% 0 0)", "oklch(38% 0 0)", "oklch(49.5% 0 0)", "oklch(61% 0 0)", "oklch(72.5% 0 0)", "oklch(84% 0 0)", "oklch(95% 0 0)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Línea ciruela",
+        "description": "Divisores discretos del roster y otros listados.",
+        "tonalRamp": ["oklch(15% 0.070 333.6 / 0.18)", "oklch(26.5% 0.070 333.6 / 0.18)", "oklch(38% 0.070 333.6 / 0.18)", "oklch(49.5% 0.070 333.6 / 0.18)", "oklch(61% 0.070 333.6 / 0.18)", "oklch(72.5% 0.070 333.6 / 0.18)", "oklch(84% 0.070 333.6 / 0.18)", "oklch(95% 0.070 333.6 / 0.18)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Titulares principales breves." },
+      "headline": { "displayName": "Headline", "purpose": "Encabezados editoriales de sección." },
+      "title": { "displayName": "Title", "purpose": "Servicios, principios y nombres del equipo." },
+      "lead": { "displayName": "Lead", "purpose": "Introducciones de alto énfasis." },
+      "body": { "displayName": "Body", "purpose": "Lectura general." },
+      "body-small": { "displayName": "Body Small", "purpose": "Especialidades, dirección y metadatos." },
+      "label": { "displayName": "Label", "purpose": "Botones principales." },
+      "action-link": { "displayName": "Action Link", "purpose": "Enlaces de acción subrayados con flecha." },
+      "nav-mobile": { "displayName": "Navigation Mobile", "purpose": "Enlaces del panel móvil." },
+      "nav-desktop": { "displayName": "Navigation Desktop", "purpose": "Enlaces compactos de la cabecera amplia." },
+      "caption": { "displayName": "Caption", "purpose": "Pies de fotografía." },
+      "brand-caption-mobile": { "displayName": "Brand Caption Mobile", "purpose": "Segunda línea de la marca en cabecera compacta." },
+      "brand-caption-desktop": { "displayName": "Brand Caption Desktop", "purpose": "Segunda línea de la marca en cabecera amplia." },
+      "section-lead": { "displayName": "Section Lead", "purpose": "Introducciones fluidas de sección." },
+      "archive-lead": { "displayName": "Archive Lead", "purpose": "Contexto introductorio del archivo documental." },
+      "archive-year": { "displayName": "Archive Year", "purpose": "Marcador documental de gran escala." }
+    },
+    "shadows": [
+      { "name": "frame-ambient", "value": "0 24px 60px rgba(50, 16, 45, 0.15)", "purpose": "Fotografía principal y mapa." },
+      { "name": "header-scrolled", "value": "0 12px 30px rgba(50, 16, 45, 0.22)", "purpose": "Cabecera cuando se separa del contenido al hacer scroll." },
+      { "name": "action", "value": "0 12px 30px rgba(22, 4, 19, 0.18)", "purpose": "Botón dorado principal." },
+      { "name": "action-on-purple", "value": "0 14px 32px rgba(30, 5, 26, 0.28)", "purpose": "Llamada final sobre campo institucional." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Curva compartida para estados, navegación y recortes de imagen." },
+      { "name": "state-fast", "value": "180ms", "purpose": "Botones, enlaces y skip link." },
+      { "name": "menu-icon", "value": "200ms", "purpose": "Transformación del icono de menú." },
+      { "name": "navigation", "value": "220ms", "purpose": "Panel móvil y regla activa de navegación." },
+      { "name": "header", "value": "250ms", "purpose": "Cambio tonal y elevación de cabecera." },
+      { "name": "service-image", "value": "600ms", "purpose": "Escala contenida de imágenes de servicio." },
+      { "name": "archive-image", "value": "650ms", "purpose": "Escala contenida del archivo fotográfico." },
+      { "name": "hero-lines", "value": "720ms / 70ms stagger", "purpose": "Entrada recortada de las tres líneas del titular." },
+      { "name": "hero-frame", "value": "820ms", "purpose": "Descubrimiento vertical del retrato institucional." },
+      { "name": "hero-image-settle", "value": "1100ms", "purpose": "Asentamiento de la fotografía principal desde scale(1.08)." },
+      { "name": "section-reveal", "value": "700ms", "purpose": "Máscaras de una sola ejecución para capítulos y listados." },
+      { "name": "list-stagger", "value": "70ms steps / 350ms max", "purpose": "Secuencia limitada para equipos y archivo." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Duración efectiva bajo prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "24rem", "purpose": "Simplifica marca, apila acciones y reduce retratos." },
+      { "name": "two-column", "value": "40rem", "purpose": "Activa retículas intermedias y pie en tres columnas." },
+      { "name": "desktop", "value": "52rem", "purpose": "Activa navegación horizontal y composiciones principales de dos columnas." },
+      { "name": "wide", "value": "68rem", "purpose": "Activa servicios asimétricos, roster de tres columnas y archivo de 12 columnas." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal dorada sobre campos institucionales oscuros.",
+      "html": "<div class=\"ds-button-stage\"><a class=\"ds-button-primary\" href=\"#\">Solicitar apoyo</a></div>",
+      "css": ".ds-button-stage { padding: 1.5rem; background: var(--purple-800, #5b184f); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-button-primary { min-height: 3rem; display: inline-flex; align-items: center; justify-content: center; padding: 0.85rem 1.3rem; border: 0; border-radius: var(--radius-small, 0.75rem); background: var(--gold-500, #e9b934); color: var(--purple-950, #32102d); box-shadow: 0 12px 30px rgba(22, 4, 19, 0.18); font-size: 0.95rem; font-weight: 700; line-height: 1; text-decoration: none; transition: transform 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), background-color 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-button-primary:hover { background: var(--gold-300, #f4d77e); transform: translateY(-2px); } .ds-button-primary:active { transform: translateY(1px); } .ds-button-primary:focus-visible { outline: 3px solid var(--gold-500, #e9b934); outline-offset: 4px; }"
+    },
+    {
+      "name": "Contact Button",
+      "kind": "button",
+      "refersTo": "button-contact",
+      "description": "Variante de cierre con hover blanco y sombra más profunda.",
+      "html": "<div class=\"ds-contact-stage\"><a class=\"ds-button-contact\" href=\"#\">Solicitar apoyo</a></div>",
+      "css": ".ds-contact-stage { padding: 1.5rem; background: var(--purple-800, #5b184f); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-button-contact { min-height: 3rem; display: inline-flex; align-items: center; justify-content: center; padding: 0.85rem 1.3rem; border: 0; border-radius: var(--radius-small, 0.75rem); background: var(--gold-500, #e9b934); color: var(--purple-950, #32102d); box-shadow: 0 14px 32px rgba(30, 5, 26, 0.28); font-size: 0.95rem; font-weight: 700; line-height: 1; text-decoration: none; transition: transform 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), background-color 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-button-contact:hover { background: var(--white, #ffffff); transform: translateY(-2px); } .ds-button-contact:active { transform: translateY(1px); } .ds-button-contact:focus-visible { outline: 3px solid var(--gold-500, #e9b934); outline-offset: 4px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Acción secundaria subrayada sobre papel.",
+      "html": "<div class=\"ds-link-stage\"><a class=\"ds-text-link\" href=\"#\">Solicitar información</a></div>",
+      "css": ".ds-link-stage { padding: 1rem; background: var(--paper, #fbfaf8); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-text-link { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--purple-800, #5b184f); font-size: 1rem; font-weight: 700; line-height: 1.65; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.25em; transition: color 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link::after { content: '→'; margin-left: 0.55rem; transition: transform 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link:hover::after { transform: translateX(0.25rem); } .ds-text-link:focus-visible { outline: 3px solid var(--purple-800, #5b184f); outline-offset: 4px; }"
+    },
+    {
+      "name": "Text Link Light",
+      "kind": "button",
+      "refersTo": "text-link-light",
+      "description": "Acción secundaria dorada sobre ciruela.",
+      "html": "<div class=\"ds-link-light-stage\"><a class=\"ds-text-link-light\" href=\"#\">Solicitar información</a></div>",
+      "css": ".ds-link-light-stage { padding: 1rem; background: var(--purple-900, #47143e); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-text-link-light { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--gold-300, #f4d77e); font-size: 1rem; font-weight: 700; line-height: 1.65; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.25em; } .ds-text-link-light::after { content: '→'; margin-left: 0.55rem; transition: transform 180ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link-light:hover::after { transform: translateX(0.25rem); } .ds-text-link-light:focus-visible { outline: 3px solid var(--gold-500, #e9b934); outline-offset: 4px; }"
+    },
+    {
+      "name": "Institutional Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Cabecera ciruela sticky con marca, sección actual y acción de apoyo.",
+      "html": "<header class=\"ds-site-header\"><div class=\"ds-nav-row\"><a class=\"ds-brand\" href=\"#\"><img src=\"img/web/simbolo-psicologia.webp\" width=\"36\" height=\"36\" alt=\"\"><span><strong>Colima I.A.P.</strong><small>Tanatología y Psicología</small></span></a><button class=\"ds-menu-button\" type=\"button\" aria-expanded=\"true\">Menú<span aria-hidden=\"true\">×</span></button><nav class=\"ds-nav\" aria-label=\"Navegación de muestra\"><a class=\"ds-current\" href=\"#\" aria-current=\"true\">Servicios</a><a href=\"#\">Nosotros</a><a href=\"#\">Equipo</a><a class=\"ds-nav-cta\" href=\"#\">Solicitar apoyo</a></nav></div></header>",
+      "css": ".ds-site-header { min-height: var(--header-height, 4.5rem); padding: 0.75rem 1rem; background: var(--purple-900, #47143e); color: var(--white, #ffffff); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-nav-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1rem; } .ds-brand { display: inline-flex; align-items: center; gap: 0.75rem; color: var(--white, #ffffff); text-decoration: none; } .ds-brand img { width: 2.25rem; height: 2.25rem; } .ds-brand span { display: grid; line-height: 1.15; } .ds-brand strong { font-size: 0.95rem; } .ds-brand small { margin-top: 0.15rem; color: var(--gold-300, #f4d77e); font-size: 0.7rem; } .ds-menu-button { min-height: 2.75rem; padding: 0.6rem 0.8rem; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: var(--radius-small, 0.75rem); background: transparent; color: var(--white, #ffffff); font: inherit; font-size: 0.85rem; font-weight: 650; } .ds-menu-button span { margin-left: 0.5rem; font-size: 1rem; } .ds-nav { flex-basis: 100%; display: grid; } .ds-nav > a { min-height: 3.5rem; display: flex; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.12); color: var(--white, #ffffff); font-size: 1.05rem; font-weight: 550; text-decoration: none; } .ds-nav > .ds-current { color: var(--gold-300, #f4d77e); } .ds-nav > .ds-nav-cta { min-height: 3rem; justify-content: center; margin-top: 0.75rem; padding: 0.75rem 1rem; border: 0; border-radius: var(--radius-small, 0.75rem); background: var(--gold-500, #e9b934); color: var(--purple-950, #32102d); font-size: 0.82rem; font-weight: 700; } .ds-site-header a:focus-visible, .ds-menu-button:focus-visible { outline: 3px solid var(--gold-500, #e9b934); outline-offset: 4px; } @media (min-width: 52rem) { .ds-site-header { min-height: 5rem; display: flex; align-items: center; } .ds-nav-row { width: 100%; flex-wrap: nowrap; } .ds-menu-button { display: none; } .ds-nav { flex-basis: auto; display: flex; align-items: center; gap: clamp(0.75rem, 2vw, 1.5rem); } .ds-nav > a { position: relative; min-height: 3rem; border: 0; font-size: clamp(0.78rem, 1.2vw, 0.9rem); } .ds-nav > a:not(.ds-nav-cta)::after { position: absolute; right: 0; bottom: 0.4rem; left: 0; height: 1px; background: var(--gold-300, #f4d77e); content: ''; transform: scaleX(0); transition: transform 220ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav > a:hover::after, .ds-nav > .ds-current::after { transform: scaleX(1); } .ds-nav > .ds-nav-cta { min-height: 2.75rem; margin-top: 0; } }"
+    },
+    {
+      "name": "Featured Service Container",
+      "kind": "card",
+      "refersTo": "service-featured",
+      "description": "Servicio principal sobre papel mineral con imagen documental amplia.",
+      "html": "<article class=\"ds-service ds-service-featured\"><div class=\"ds-service-image\"><img src=\"img/web/servicio-tanatologia.webp\" alt=\"Manos abiertas bajo una mariposa\"></div><div class=\"ds-service-copy\"><h3>Intervención tanatológica y psicológica</h3><p>Acompañamiento personalizado para personas, parejas y familias ante una pérdida significativa.</p><a href=\"#\">Solicitar información</a></div></article>",
+      "css": ".ds-service { overflow: hidden; border-radius: var(--radius-large, 1.5rem); background: var(--paper-dark, #f1eee9); color: var(--ink, #211b20); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-service-image { min-height: 15rem; overflow: hidden; } .ds-service-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 600ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-service:hover .ds-service-image img { transform: scale(1.03); } .ds-service-copy { padding: clamp(1.5rem, 4vw, 2.5rem); } .ds-service-copy h3 { margin: 0 0 0.75rem; font-size: clamp(1.3rem, 2.2vw, 1.75rem); font-weight: 620; line-height: 1.05; letter-spacing: -0.02em; } .ds-service-copy p { max-width: 48ch; margin: 0 0 1rem; color: var(--muted, #655c63); line-height: 1.65; } .ds-service-copy a { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--purple-800, #5b184f); font-weight: 700; text-underline-offset: 0.25em; } .ds-service-copy a:focus-visible { outline: 3px solid var(--purple-800, #5b184f); outline-offset: 4px; } @media (min-width: 40rem) and (max-width: 67.999rem) { .ds-service-featured { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 0.7fr); } .ds-service-copy { align-self: center; } }"
+    },
+    {
+      "name": "Purple Service Container",
+      "kind": "card",
+      "refersTo": "service-purple",
+      "description": "Servicio compacto en ciruela con enlace dorado.",
+      "html": "<article class=\"ds-service ds-service-purple\"><div class=\"ds-service-image\"><img src=\"img/web/servicio-grupo-ayuda.webp\" alt=\"Personas reunidas en acompañamiento\"></div><div class=\"ds-service-copy\"><h3>Grupo de ayuda mutua</h3><p>Un espacio comunitario para compartir y acompañarse durante el proceso de duelo.</p><a href=\"#\">Solicitar información</a></div></article>",
+      "css": ".ds-service { overflow: hidden; border-radius: var(--radius-large, 1.5rem); background: var(--purple-900, #47143e); color: var(--white, #ffffff); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-service-image { min-height: 15rem; overflow: hidden; } .ds-service-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 600ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-service:hover .ds-service-image img { transform: scale(1.03); } .ds-service-copy { padding: clamp(1.5rem, 4vw, 2.5rem); } .ds-service-copy h3 { margin: 0 0 0.75rem; font-size: clamp(1.3rem, 2.2vw, 1.75rem); font-weight: 620; line-height: 1.05; letter-spacing: -0.02em; } .ds-service-copy p { max-width: 48ch; margin: 0 0 1rem; color: rgba(255, 255, 255, 0.76); line-height: 1.65; } .ds-service-copy a { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--gold-300, #f4d77e); font-weight: 700; text-underline-offset: 0.25em; } .ds-service-copy a:focus-visible { outline: 3px solid var(--gold-500, #e9b934); outline-offset: 4px; } @media (min-width: 68rem) { .ds-service-purple { display: grid; grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr); } .ds-service-image { min-height: 100%; } .ds-service-copy { align-self: center; } }"
+    },
+    {
+      "name": "Gold Service Container",
+      "kind": "card",
+      "refersTo": "service-gold",
+      "description": "Servicio compacto en oro papel con tinta ciruela.",
+      "html": "<article class=\"ds-service ds-service-gold\"><div class=\"ds-service-image\"><img src=\"img/web/servicio-talleres.webp\" alt=\"Sesión de formación ante un grupo\"></div><div class=\"ds-service-copy\"><h3>Talleres y cursos</h3><p>Actividades de capacitación y desarrollo alrededor del morir, la muerte y el duelo.</p><a href=\"#\">Solicitar información</a></div></article>",
+      "css": ".ds-service { overflow: hidden; border-radius: var(--radius-large, 1.5rem); background: var(--gold-100, #fff4ce); color: var(--purple-950, #32102d); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-service-image { min-height: 15rem; overflow: hidden; } .ds-service-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform 600ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-service:hover .ds-service-image img { transform: scale(1.03); } .ds-service-copy { padding: clamp(1.5rem, 4vw, 2.5rem); } .ds-service-copy h3 { margin: 0 0 0.75rem; font-size: clamp(1.3rem, 2.2vw, 1.75rem); font-weight: 620; line-height: 1.05; letter-spacing: -0.02em; } .ds-service-copy p { max-width: 48ch; margin: 0 0 1rem; color: var(--muted, #655c63); line-height: 1.65; } .ds-service-copy a { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--purple-800, #5b184f); font-weight: 700; text-underline-offset: 0.25em; } .ds-service-copy a:focus-visible { outline: 3px solid var(--purple-800, #5b184f); outline-offset: 4px; } @media (min-width: 68rem) { .ds-service-gold { display: grid; grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr); } .ds-service-image { min-height: 100%; } .ds-service-copy { align-self: center; } }"
+    },
+    {
+      "name": "Team Roster Item",
+      "kind": "custom",
+      "refersTo": "team-roster-item",
+      "description": "Entrada plana del roster con retrato vertical, función y contacto.",
+      "html": "<div class=\"ds-team-list\"><article class=\"ds-person\"><img src=\"img/web/equipo-maria-rosa.webp\" width=\"96\" height=\"120\" alt=\"Retrato de María Rosa Guzmán Álvarez\"><div class=\"ds-person-copy\"><h3>María Rosa Guzmán Álvarez</h3><p>Lic. en Enfermería<br>Coordinadora académica</p><a href=\"#\">Contactar</a></div></article></div>",
+      "css": ".ds-team-list { display: grid; gap: 1px; border-block: 1px solid var(--line, rgba(50, 16, 45, 0.18)); background: var(--line, rgba(50, 16, 45, 0.18)); } .ds-person { min-width: 0; display: grid; grid-template-columns: 6rem 1fr; gap: 1.25rem; padding-block: 1.5rem; background: var(--paper-dark, #f1eee9); color: var(--ink, #211b20); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-person > img { width: 6rem; height: 7.5rem; display: block; border-radius: var(--radius-small, 0.75rem); object-fit: cover; object-position: center top; background: var(--purple-100, #f0e4ed); } .ds-person-copy { min-width: 0; align-self: center; } .ds-person h3 { margin: 0 0 0.75rem; overflow-wrap: anywhere; font-size: clamp(1.3rem, 2.2vw, 1.75rem); font-weight: 620; line-height: 1.05; letter-spacing: -0.02em; } .ds-person p { margin: 0 0 0.75rem; color: var(--muted, #655c63); font-size: 0.92rem; line-height: 1.55; } .ds-person a { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--purple-800, #5b184f); font-size: 0.9rem; font-weight: 700; text-underline-offset: 0.25em; } .ds-person a:focus-visible { outline: 3px solid var(--purple-800, #5b184f); outline-offset: 4px; } @media (max-width: 24rem) { .ds-person { grid-template-columns: 4.75rem 1fr; gap: 1rem; } .ds-person > img { width: 4.75rem; height: 6rem; } } @media (min-width: 40rem) { .ds-person { padding: 1.5rem; } }"
+    },
+    {
+      "name": "Documentary Image Archive",
+      "kind": "custom",
+      "refersTo": "archive-photo",
+      "description": "Mosaico responsive de seis fotografías institucionales con jerarquía documental.",
+      "html": "<section class=\"ds-archive\"><div class=\"ds-archive-heading\"><h3>Jornadas Tanatológicas</h3><span aria-hidden=\"true\">2023</span></div><div class=\"ds-archive-grid\"><figure class=\"ds-photo ds-photo-lead\"><img src=\"img/web/jornadas-2023-01.webp\" alt=\"Equipo organizador\"></figure><figure class=\"ds-photo\"><img src=\"img/web/jornadas-2023-02.webp\" alt=\"Apertura en el auditorio\"></figure><figure class=\"ds-photo\"><img src=\"img/web/jornadas-2023-03.webp\" alt=\"Ponencia durante las jornadas\"></figure><figure class=\"ds-photo ds-photo-tall\"><img src=\"img/web/jornadas-2023-04.webp\" alt=\"Público asistente\"></figure><figure class=\"ds-photo\"><img src=\"img/web/jornadas-2023-05.webp\" alt=\"Panel de participantes\"></figure><figure class=\"ds-photo\"><img src=\"img/web/jornadas-2023-06.webp\" alt=\"Mesa de registro\"></figure></div></section>",
+      "css": ".ds-archive { padding: 1rem; background: var(--paper, #fbfaf8); color: var(--ink, #211b20); font-family: \"Commissioner\", \"Trebuchet MS\", sans-serif; } .ds-archive-heading { display: grid; gap: 1rem; margin-bottom: 2rem; } .ds-archive-heading h3 { max-width: 12ch; margin: 0; font-size: clamp(2.25rem, 5vw, 4.5rem); font-weight: 660; line-height: 1.05; letter-spacing: -0.035em; } .ds-archive-heading span { color: var(--purple-700, #702060); font-size: clamp(5rem, 18vw, 12rem); font-weight: 750; letter-spacing: -0.06em; line-height: 0.75; } .ds-archive-grid { display: grid; gap: 0.75rem; } .ds-photo { min-height: 15rem; margin: 0; overflow: hidden; border-radius: var(--radius-small, 0.75rem); background: var(--paper-dark, #f1eee9); } .ds-photo img { width: 100%; height: 100%; display: block; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 650ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-photo:hover img { transform: scale(1.025); } .ds-photo-lead img { aspect-ratio: 16 / 9; } @media (min-width: 40rem) { .ds-archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ds-photo-lead { grid-column: 1 / -1; } } @media (min-width: 52rem) { .ds-archive-heading { grid-template-columns: minmax(0, 1fr) auto; align-items: end; } .ds-archive-heading span { text-align: right; } } @media (min-width: 68rem) { .ds-archive-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 11rem; } .ds-photo { grid-column: span 4; min-height: 0; } .ds-photo img, .ds-photo-lead img { aspect-ratio: auto; } .ds-photo-lead { grid-column: span 8; grid-row: span 2; } .ds-photo-tall { grid-column: span 4; grid-row: span 2; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El archivo vivo de acompañamiento",
+    "overview": "El sistema convierte la identidad morada y dorada existente en un archivo institucional que se siente activo, humano y verificable. Campos ciruela y morado sostienen la voz institucional; reglas y acciones doradas orientan sin convertir el sitio en una campaña comercial.\n\nLa composición es editorial y espaciosa. Commissioner aporta continuidad entre titulares, lectura y controles, mientras la fotografía documental conserva la presencia real de personas, servicios y memoria institucional. El resultado es sereno y establecido, nunca clínico, funerario ni comercialmente urgente.",
+    "keyCharacteristics": [
+      "Campos morados inmersivos sobre una base de papel cálido.",
+      "Oro preciso para acción, orientación y separación.",
+      "Una sola familia Commissioner con escala y peso variables.",
+      "Fotografía real recortada en marcos editoriales, no usada como adorno.",
+      "Contenedores tonales y profundidad reservada para elementos prioritarios."
+      ,"Movimiento de máscaras con deceleración natural y fallback completamente estático."
+    ],
+    "rules": [
+      { "name": "The Gold Precision Rule", "body": "El oro saturado se reserva para acciones, enlaces y reglas finas; solo su tinte pálido puede ocupar un contenedor amplio.", "section": "colors" },
+      { "name": "The Purple Field Rule", "body": "El morado profundo puede cubrir secciones completas, siempre con texto blanco o dorado de contraste probado.", "section": "colors" },
+      { "name": "The One-Family Rule", "body": "Toda la interfaz usa Commissioner; la diferenciación proviene de peso, escala, medida y tracking, nunca de una segunda tipografía decorativa.", "section": "typography" },
+      { "name": "The Evidence Lift Rule", "body": "La sombra ciruela pertenece a fotografía, mapa y acciones prioritarias; no se aplica a cada bloque de contenido.", "section": "elevation" },
+      { "name": "The Two-Radius Rule", "body": "Usa únicamente los radios pequeño y grande del sistema; no conviertas botones, retratos o contenedores en píldoras o círculos.", "section": "shapes" }
+      ,{ "name": "The Living Archive Rule", "body": "El contenido se descubre como material documental mediante máscaras y recortes; no rebota, no flota perpetuamente y no vuelve a animarse al regresar.", "section": "components" }
+    ],
+    "dos": [
+      "Do usar fotografía institucional real como evidencia y conservar recortes con `object-fit: cover`.",
+      "Do alternar campos morados y papeles cálidos para construir capítulos claros.",
+      "Do mantener objetivos interactivos de al menos `2.75rem` y focos visibles de alto contraste.",
+      "Do preservar los cambios de composición establecidos en `24rem`, `40rem`, `52rem` y `68rem`."
+      ,"Do animar solo `transform`, `opacity` y `clip-path`, manteniendo el contenido visible cuando JavaScript no está disponible."
+    ],
+    "donts": [
+      "Don't añadir una segunda tipografía, iconografía decorativa o una paleta ajena al morado, oro y papel.",
+      "Don't convertir servicios, roster o archivo en tarjetas flotantes con sombra.",
+      "Don't usar botones de píldora, retratos circulares ni radios intermedios inventados.",
+      "Don't inventar inputs, chips, diálogos o estados disabled/error que la implementación no contiene."
+      ,"Don't añadir parallax, loops, rebotes o revelados repetidos que compitan con la lectura sensible del contenido."
+    ]
+  }
+}
