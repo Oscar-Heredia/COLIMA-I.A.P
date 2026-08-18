@@ -677,15 +677,19 @@ html:not(.js) .site-nav {
 .person {
     min-width: 0;
     display: grid;
-    grid-template-columns: 6rem 1fr;
-    gap: 1.25rem;
+    grid-template-columns: 8rem 1fr;
+    gap: 1.35rem;
     padding-block: 1.5rem;
     background: var(--paper-dark);
 }
 
+/* 8rem (128px) es el techo real del retrato: los originales más pequeños del
+   equipo miden 148px y 214px de ancho. Por encima de esto se ablandan y la
+   sección que sostiene la confianza de la institución empieza a verse peor,
+   no mejor. Para crecer más hacen falta fotografías nuevas. */
 .person img {
-    width: 6rem;
-    height: 7.5rem;
+    width: 8rem;
+    height: 10rem;
     border-radius: var(--radius-small);
     object-fit: cover;
     object-position: center top;
@@ -1379,13 +1383,13 @@ html:not(.js) .site-nav {
     }
 
     .person {
-        grid-template-columns: 4.75rem 1fr;
+        grid-template-columns: 5.75rem 1fr;
         gap: 1rem;
     }
 
     .person img {
-        width: 4.75rem;
-        height: 6rem;
+        width: 5.75rem;
+        height: 7.25rem;
     }
 }
 
@@ -1422,5 +1426,308 @@ html:not(.js) .site-nav {
     .menu-button-icon::before,
     .menu-button-icon::after {
         background: ButtonText;
+    }
+}
+
+/* ── Cómo ayudar ─────────────────────────────────────────────
+   Una I.A.P. vive de donativos y voluntariado. Sin esta sección el
+   sitio no ofrece ninguna vía de colaborar. */
+.support {
+    background: var(--paper);
+}
+
+.support-grid {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border-block: 1px solid var(--line);
+}
+
+.support-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-block: 1.75rem;
+    background: var(--paper);
+}
+
+.support-card h3 {
+    font-size: clamp(1.15rem, 1.9vw, 1.4rem);
+    letter-spacing: -0.02em;
+}
+
+.support-card p {
+    flex: 1;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.support-card a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    color: var(--purple-800);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-bottom: 1px solid currentColor;
+}
+
+/* ── Ayuda urgente ───────────────────────────────────────────
+   Números verificados en fuente oficial el 2026-08-14. No se
+   modifican sin volver a verificar: un dígito mal aquí hace daño. */
+.crisis {
+    background: var(--purple-950);
+    color: var(--white);
+}
+
+.crisis-shell {
+    display: grid;
+    gap: 2rem;
+}
+
+.crisis-copy h2 {
+    color: var(--white);
+    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    letter-spacing: -0.03em;
+}
+
+.crisis-copy p {
+    margin-top: 0.85rem;
+    max-width: 46ch;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.crisis-lines {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.crisis-lines li {
+    display: grid;
+    gap: 0.2rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: var(--radius-small);
+}
+
+.crisis-lines span {
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-300);
+}
+
+/* nowrap es obligatorio: un número de emergencia partido en dos líneas se
+   lee mal y se marca peor. El tamaño cede antes que la integridad del número. */
+.crisis-lines a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    color: var(--white);
+    font-size: clamp(1.25rem, 2.1vw, 1.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.crisis-lines small {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 0.84rem;
+}
+
+@media (min-width: 40rem) {
+    .support-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .support-card {
+        padding: 1.75rem;
+    }
+
+    .crisis-lines {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 68rem) {
+    .crisis-shell {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 3.5rem;
+        align-items: center;
+    }
+}
+
+/* ── Etiqueta de sección numerada ────────────────────────────
+   Patrón tomado de las plantillas premium (Cinderline): rótulo en
+   monoespaciada con el número dentro de un círculo de filete. Es el
+   recurso que más "aire editorial" añade por línea de CSS, y ordena la
+   lectura: el visitante sabe en qué punto del recorrido está. */
+.section-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.section-tag span {
+    width: 1.85rem;
+    height: 1.85rem;
+    flex: none;
+    display: grid;
+    place-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+}
+
+/* Sobre los fondos oscuros el rótulo cambia de mano */
+.crisis .section-tag {
+    color: var(--gold-300);
+}
+
+.contact .section-tag {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+/* ── Estados de interacción ──────────────────────────────────
+   El desplazamiento lateral al pasar el cursor es el gesto que usan
+   Cinderline y MOTIF en sus filas: barato, silencioso y hace que la
+   interfaz responda en vez de quedarse quieta. */
+@media (hover: hover) and (pointer: fine) {
+    .person,
+    .support-card {
+        transition: padding-inline 260ms var(--ease-out), background 260ms var(--ease-out);
+    }
+
+    .person:hover,
+    .support-card:hover {
+        padding-inline: 1.35rem;
+        background: var(--white);
+    }
+
+    .support-card:hover a,
+    .person:hover a {
+        color: var(--purple-700);
+    }
+}
+
+/* .about va sobre morado profundo: el gris apagado se hundía a 2.62:1 */
+.about .section-tag {
+    color: var(--gold-300);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   NAVEGACIÓN EN PÍLDORA FLOTANTE
+   Patrón de Cinderline: la cabecera deja de ser una banda de ancho
+   completo y pasa a flotar sobre el contenido.
+
+   Se centra con `margin-inline: auto`, NO con `transform: translateX(-50%)`.
+   Un transform en la cabecera la convertiría en bloque contenedor de sus
+   hijos `position: fixed`, y tanto la barra de progreso como el panel del
+   menú móvil dejarían de referirse al viewport.
+   ══════════════════════════════════════════════════════════════ */
+
+:root {
+    --pill-top: 0.9rem;
+    --pill-gap: 0.6rem;
+}
+
+.site-header {
+    position: fixed;
+    top: var(--pill-top);
+    left: 0;
+    right: 0;
+    width: min(72rem, calc(100vw - 1.75rem));
+    margin-inline: auto;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 1.15rem;
+    background: rgba(71, 20, 62, 0.93);
+    box-shadow: 0 14px 40px rgba(50, 16, 45, 0.28);
+    backdrop-filter: blur(14px);
+    transition: box-shadow 250ms var(--ease-out), background 250ms var(--ease-out);
+}
+
+.site-header.is-scrolled {
+    background: rgba(50, 16, 45, 0.96);
+    box-shadow: 0 18px 50px rgba(50, 16, 45, 0.4);
+}
+
+.header-inner {
+    width: auto;
+    margin-inline: 0;
+    padding-inline: clamp(0.9rem, 2vw, 1.4rem);
+    min-height: 3.9rem;
+}
+
+/* La barra de progreso sale de la píldora: dentro quedaría recortada por el
+   radio. Al no haber transform en la cabecera, `fixed` se refiere al viewport. */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 0;
+}
+
+/* El hero ya no cede sitio a la cabecera, que salió del flujo: se le añade
+   el hueco por arriba para que el contenido no quede debajo de la píldora. */
+.hero-inner {
+    min-height: 100svh;
+    padding-top: calc(var(--pill-top) + 4.4rem + clamp(1.5rem, 4vw, 3rem));
+}
+
+html {
+    scroll-padding-top: calc(var(--pill-top) + 4.4rem + 1rem);
+}
+
+/* Panel del menú en móvil: cuelga de la píldora, alineado con ella y con el
+   mismo radio, en lugar de ocupar todo el ancho de la pantalla. */
+@media (max-width: 51.999rem) {
+    .js .site-nav {
+        position: fixed;
+        top: calc(var(--pill-top) + 3.9rem + var(--pill-gap));
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: min(72rem, calc(100vw - 1.75rem));
+        margin-inline: auto;
+        max-height: calc(100dvh - var(--pill-top) - 5.5rem);
+        padding: 0.5rem 0.9rem 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 1.15rem;
+        background: rgba(50, 16, 45, 0.97);
+        box-shadow: 0 18px 50px rgba(50, 16, 45, 0.4);
+        backdrop-filter: blur(14px);
+    }
+}
+
+@media (min-width: 52rem) {
+    .header-inner {
+        min-height: 4.4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header {
+        transition: none;
     }
 }
