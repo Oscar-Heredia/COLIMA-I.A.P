@@ -318,3 +318,50 @@ La forma se apoya en dos radios suavemente rectangulares: `small` para botones, 
 - **Don't** usar botones de píldora, retratos circulares ni radios intermedios inventados.
 - **Don't** inventar inputs, chips, diálogos o estados disabled/error que la implementación no contiene.
 - **Don't** añadir parallax, loops, rebotes o revelados repetidos que compitan con la lectura sensible del contenido.
+
+## Section labels (2026-08-17)
+
+Patrón tomado de las plantillas premium (Cinderline): cada sección abre con un
+rótulo en monoespaciada, mayúsculas y `letter-spacing: 0.14em`, con su número
+dentro de un círculo de filete de 1 px.
+
+Es el recurso que más aire editorial añade por línea de CSS, y además ordena la
+lectura: el visitante sabe en qué punto del recorrido está.
+
+- El rótulo **cambia de color según el fondo**: gris apagado sobre papel, dorado
+  sobre morado profundo (`.about`, `.crisis`), blanco atenuado sobre
+  `.contact`. Con el gris heredado, `.about` caía a 2.62:1.
+- El número va con `aria-hidden`: es ornamento de orden, no contenido.
+
+## Interaction states
+
+Filas y tarjetas desplazan su `padding-inline` al pasar el cursor, el gesto que
+usan Cinderline y MOTIF. Barato, silencioso, y hace que la interfaz responda en
+vez de quedarse quieta. Solo bajo `(hover: hover) and (pointer: fine)`.
+
+## Floating pill navigation (2026-08-17)
+
+La cabecera deja de ser una banda de ancho completo y flota sobre el contenido:
+`position: fixed`, ancho `min(72rem, 100vw - 1.75rem)`, radio de 1.15 rem, borde
+de 1 px y `backdrop-filter`. Patrón de Cinderline.
+
+Dos trampas de CSS que costaron encontrar y que no hay que reintroducir:
+
+1. **La píldora se centra con `margin-inline: auto`, nunca con
+   `transform: translateX(-50%)`.** Un `transform` la convertiría en bloque
+   contenedor de sus hijos `position: fixed`.
+2. **`backdrop-filter` hace exactamente lo mismo que `transform`.** Por eso la
+   barra de progreso vive fuera del `<header>`, como hermana: dentro se
+   posicionaba contra la píldora en lugar de contra el viewport, y su ancho era
+   el de la píldora.
+
+Consecuencias en cadena, ya resueltas:
+
+- La cabecera salió del flujo, así que `.hero-inner` pasó de
+  `min-height: calc(100svh - var(--header-height))` a `100svh` más un
+  `padding-top` que despeja la píldora.
+- `scroll-padding-top` se recalcula sobre la altura de la píldora más su
+  separación superior, para que los anclajes no dejen el titular debajo.
+- En móvil el panel del menú cuelga de la píldora con su mismo ancho, radio y
+  borde, en lugar de ocupar todo el ancho de pantalla.
+

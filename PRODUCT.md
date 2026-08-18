@@ -39,6 +39,21 @@ Institución no lucrativa de Colima que reúne atención psicológica, acompaña
 - El dominio de producción y el despliegue definitivo aún no están confirmados.
 - Antes de publicar deben verificarse la dirección exacta, credenciales profesionales, titularidad de canales y avisos legales.
 
+## Capabilities Added (2026-08-17)
+
+- **Cómo ayudar**: donación, voluntariado y difusión. Una I.A.P. sin vía de
+  colaboración no cumple una función básica de su figura jurídica.
+  **PENDIENTE**: los datos bancarios (cuenta, CLABE, recibo deducible) no están
+  confirmados y **no se inventan**. Hasta que la institución los proporcione,
+  las tres vías se canalizan por el WhatsApp ya verificado.
+- **Ayuda urgente**: Línea de la Vida `800 911 2000` (CONASAMA), SAPTEL
+  `55 5259 8121` y emergencias `911`. Verificadas en fuente oficial el
+  2026-08-14. **No se modifican sin volver a verificar**: un dígito equivocado
+  en un número de crisis hace daño real.
+- Retratos del equipo ampliados de 96×120 a 128×160 px. **Techo alcanzado**:
+  los originales más pequeños miden 148×174 y 214×216, así que crecer más los
+  ablanda. Para retratos mayores hacen falta fotografías nuevas.
+
 ## Brand Commitments
 
 - Nombre: Tanatología y Psicología Colima I.A.P.
